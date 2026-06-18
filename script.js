@@ -9,7 +9,7 @@ const boardHeight = 800;
 const pieceWidth = boardWidth / cols;
 const pieceHeight = boardHeight / rows;
 
-const imageSrc = "puzzle.png";
+const imageSrc = "puzzle.jpg";
 
 let placedCount = 0;
 const totalPieces = rows * cols;
@@ -136,7 +136,7 @@ function enableDrag(piece) {
             console.log("Placed:", placedCount, "/", totalPieces);
 
             if (placedCount === totalPieces) {
-                console.log("PUZZLE COMPLETE");
+                console.log(" COMPLETE");
                 completePuzzle();
             }
         }
